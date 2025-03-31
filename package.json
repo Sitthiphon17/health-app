@@ -1,0 +1,32 @@
+{
+  "name": "health-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && pages -d dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vue-tsc": "^2.2.8",
+    "vue-tsx-support": "^3.2.0"
+  },
+  "homepage": "https://Sitthiphon17.github.io/health.app",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuex": "^4.1.0"
+  }
+}
