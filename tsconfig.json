@@ -1,28 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2020",                   // เลือกการตั้งค่าที่ถูกต้อง
+    "module": "ESNext",                   // เลือก ESNext สำหรับโมดูล
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
-    "jsx": "preserve",  // เปลี่ยนเป็น "preserve-jsx" เพื่อรองรับ JSX ใน React
+    "jsx": "preserve",                    // ใช้ preserve สำหรับ JSX
     "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
+    "strict": true,                        // เปิดใช้งานการตรวจสอบข้อผิดพลาดอย่างเข้มงวด
     "esModuleInterop": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "allowJs": true
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"  // ทำให้ TypeScript รู้จักไฟล์ .vue
+    "src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

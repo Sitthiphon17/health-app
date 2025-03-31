@@ -8,8 +8,9 @@ export default defineConfig({
     host: '0.0.0.0',  // เปิดให้เข้าถึงจาก IP ภายนอก
     port: 3000,        // กำหนดพอร์ตที่ต้องการ (สามารถเปลี่ยนได้)
   },
-  base: '/',           // ใช้ '/' เป็น base URL หากไม่ต้องการตั้งชื่อ repository
+  base: '/health-app',          
   build: {
     outDir: 'dist',    // กำหนดให้ไฟล์ที่ build ไปยังโฟลเดอร์ 'dist'
   },
 });
+  
